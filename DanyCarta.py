@@ -30,7 +30,7 @@ st.markdown(f"""
         <style>
         .stApp {{
             background-image: url('data:image/jpeg;base64,{cover_image}');
-            background-size: 100% 100%;
+            background-size: 50% 50%;
         }}
         </style>
     """, unsafe_allow_html=True)
