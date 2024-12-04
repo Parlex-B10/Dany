@@ -73,7 +73,7 @@ if st.session_state.carta_visible:
     """, unsafe_allow_html=True)
 
     # Contenido de la carta
-    st.markdown('<p style="color: black; font-size: 36px;"><strong>Querida Dany❤,</strong></p>', unsafe_allow_html=True)
+    st.markdown('<p style="color: black; font-size: 36px;"><strong>Querida Dany,</strong></p>', unsafe_allow_html=True)
 
     st.markdown('<p style="color: black; font-size: 18px;">"Eres la casualidad más bonita que llegó a mi vida."</p>', unsafe_allow_html=True)
 
