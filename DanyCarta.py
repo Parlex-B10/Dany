@@ -20,7 +20,7 @@ st.markdown(hide_st_style, unsafe_allow_html=True)
 selected = option_menu(None, ["Portada","Carta"],
           icons=["person-vcard", "folder-fill"],
           menu_icon="cast", default_index=0, orientation="horizontal")
-if selected ="Portada":
+if selected =="Portada":
 # Convertir imagen a base64
 def image_to_base64(img_path):
     with open(img_path, "rb") as f:
@@ -38,7 +38,7 @@ st.markdown(f"""
         </style>
     """, unsafe_allow_html=True)
 
-if selected ="Carta":
+if selected =="Carta":
     background_image = image_to_base64('fondo1.jpg')
     st.markdown(f"""
         <style>
