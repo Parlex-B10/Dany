@@ -24,7 +24,7 @@ def image_to_base64(img_path):
         return base64.b64encode(f.read()).decode()
 
 # Imagen de portada
-cover_image = image_to_base64('portadapaloma.PNG.PNG')
+cover_image = image_to_base64('portadapaloma.PNG')
 
 st.markdown(f"""
         <style>
