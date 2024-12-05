@@ -37,7 +37,7 @@ if selected =="Portada":
           <style>
           .stApp {{
               background-image: url('data:image/jpeg;base64,{cover_image}');
-              background-size: cover;
+              background-size: 100%;
           }}
           </style>
       """, unsafe_allow_html=True)
