@@ -74,7 +74,8 @@ if selected =="Carta":
     cuando_te_vi3 = '''Esa noche seguías viniendo a preguntarme lo mismo, y solo me arrepiento de una cosa, no tener el valor para pedirte tu número directamente. Por fortuna, al día siguiente, abrí mi galería y encontré unas fotos y un video de ti. Fue entonces cuando decidí arriesgarme.'''
     st.markdown(f'<p style="color: black;">{cuando_te_vi3}</p>', unsafe_allow_html=True)
 
-    me_gustas1 = '''Pero si te lo preguntas, no solo me gustas por tu hermosa sonrisa, sino también por tu forma de ser, me gusta que seas muy agradecida, me gusta como te pones tus objetivos y buscas cumplirlos, me gusta que eres fiel a tus valores y creencias, me gusta que siempre tratas de dar lo mejor de ti a pesar de tener tu agenda bien llena, me gusta como te pones nerviosa cuando te digo algo cursi, me encanta ver tus ojos, me gusta que te diviertes a tu manera, me gusta el valor que le das a tus amistades y la importancia de fechas especiales, me encantó que estuviste en mi cumple y más tu promesa del mensaje a las 12, ME GUSTAS TÚ y siento que entre más te conozco, más me enamoro.'''
+    me_gustas1 = '''Pero si te lo preguntas, no solo me gustas por tu hermosa sonrisa, sino también por tu forma de ser, me gusta que seas muy agradecida, me gusta como te pones tus objetivos y buscas cumplirlos, me gusta que eres fiel a tus valores y creencias, me gusta que siempre tratas de dar lo mejor de ti a pesar de tener tu agenda bien llena, me gusta como te pones nerviosa cuando te digo algo cursi, me encanta ver tus ojos, me gusta que te diviertes a tu manera, me gusta el valor que le das a tus amistades y la importancia de fechas especiales, me encantó que estuviste en mi cumple y más tu promesa del mensaje a las 12, ME GUSTAS TÚ y siento que entre más te conozco, más me enamoro.
+    Sé que no te gustan mucho las promesas porque, cuando no se cumplen, pueden dejarte con expectativas rotas. Pero, más allá de una promesa, quiero demostrártelo día a día que tú eres la persona que me gusta y con quien quiero estar.'''
     st.markdown(f'<p style="color: black;">{me_gustas1}</p>', unsafe_allow_html=True)
 
     me_gustas2 = '''Sin embargo, quiero ser claro contigo. Mi intención no es apresurar nada, quiero conocerte mejor y que tú también me conozcas. Pero quiero que sepas que me gustaría algo más que una amistad contigo, si eso es algo que tú también quisieras. Si no es así, lo entenderé, pero creo que es mejor hablarlo para evitar malentendidos.
@@ -90,6 +91,9 @@ if selected =="Carta":
     """
     st.components.v1.html(spotify_embed_code, height=352)
 
+    respuesta = '''P.D.2: Me hubiera encantado ver tu reacción en persona, pero espero tu selfie. Y si tienes algo que decirme, estaré feliz de escucharte o leerte'''
+    st.markdown(f'<p style="color: black;">{respuesta}</p>', unsafe_allow_html=True)
+  
     firma = '''Con cariño,'''
     st.markdown(f'<p style="color: black; font-size: 24px;">{firma}</p>', unsafe_allow_html=True)
 
