@@ -1,6 +1,7 @@
 import streamlit as st
 from PIL import Image
 import base64
+from streamlit_option_menu import option_menu
 
 st.set_page_config(page_title="Dany, eres mi casualidad", page_icon=":love_letter:", layout="wide")
 hide_st_style = """
