@@ -3,8 +3,6 @@ from PIL import Image
 import base64
 
 st.set_page_config(page_title="Dany, eres mi casualidad", page_icon=":love_letter:", layout="wide")
-
-# Ocultar el menú y el pie de página predeterminados de Streamlit
 hide_st_style = """
 <style>
 #MainMenu {
@@ -20,45 +18,51 @@ header {
 """
 st.markdown(hide_st_style, unsafe_allow_html=True)
 
-# Si no se ha mostrado la carta, renderizar la imagen y el botón
+# Convertir imagen a base64
+def image_to_base64(img_path):
+    with open(img_path, "rb") as f:
+        return base64.b64encode(f.read()).decode()
+
+# Imagen de portada
+cover_image = image_to_base64('portadapaloma.PNG')
+
+st.markdown(f"""
+        <style>
+        .stApp {{
+            background-image: url('data:image/jpeg;base64,{cover_image}');
+            background-size: 100% 100%;
+        }}
+        </style>
+    """, unsafe_allow_html=True)
+
+# Mostrar imagen como enlace y cambiar el estado
 if 'carta_visible' not in st.session_state:
     st.session_state.carta_visible = False
 
+# Si no se ha mostrado la carta, renderizar la imagen
 if not st.session_state.carta_visible:
-    # Mostrar imagen centrada
+    # Centrar el botón con una fila
     st.markdown("""
         <style>
-        .center-content {
+        .center-button {
             display: flex;
             justify-content: center;
-            align-items: center;
-            flex-direction: column;
-        }
-        .center-button {
             margin-top: 20px;
         }
         </style>
     """, unsafe_allow_html=True)
 
+    # Crear el contenedor de la fila
     with st.container():
-        st.markdown('<div class="center-content">', unsafe_allow_html=True)
-        
-        # Mostrar imagen de portada centrada
-        portada = Image.open("portadapaloma.PNG")
-        st.image(portada, use_column_width=False, caption=None)
-        
-        # Botón centrado
         st.markdown('<div class="center-button">', unsafe_allow_html=True)
         if st.button("Abrir la carta"):
             st.session_state.carta_visible = True
-        st.markdown('</div>', unsafe_allow_html=True)
-        
         st.markdown('</div>', unsafe_allow_html=True)
 
 # Mostrar la carta si está en el estado correspondiente
 if st.session_state.carta_visible:
     # Fondo de la carta
-    background_image = base64.b64encode(open("fondo1.jpg", "rb").read()).decode()
+    background_image = image_to_base64('fondo1.jpg')
     st.markdown(f"""
         <style>
         .stApp {{
