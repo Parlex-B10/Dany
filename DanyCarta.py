@@ -77,11 +77,9 @@ if selected =="Carta":
     me_gustas1 = '''Pero si te lo preguntas, no solo me gustas por tu hermosa sonrisa, sino también por tu forma de ser, me gusta que seas muy agradecida, me gusta como te pones tus objetivos y buscas cumplirlos, me gusta que eres fiel a tus valores y creencias, me gusta que siempre tratas de dar lo mejor de ti a pesar de tener tu agenda bien llena, me gusta como te pones nerviosa cuando te digo algo cursi, me encanta ver tus ojos, me gusta que te diviertes a tu manera, me gusta el valor que le das a tus amistades y la importancia de fechas especiales, me encantó que estuviste en mi cumple y más tu promesa del mensaje a las 12, ME GUSTAS TÚ y siento que entre más te conozco, más me enamoro.'''
     st.markdown(f'<p style="color: black;">{me_gustas1}</p>', unsafe_allow_html=True)
 
-    me_gustas2 = '''Sin embargo, quiero ser claro contigo. Mi intención no es apresurar nada, quiero conocerte mejor y que tú también me conozcas. Pero quiero que sepas que me gustaría algo más que una amistad contigo, si eso es algo que tú también quisieras. Si no es así, lo entenderé, pero creo que es mejor hablarlo para evitar malentendidos.'''
+    me_gustas2 = '''Sin embargo, quiero ser claro contigo. Mi intención no es apresurar nada, quiero conocerte mejor y que tú también me conozcas. Pero quiero que sepas que me gustaría algo más que una amistad contigo, si eso es algo que tú también quisieras. Si no es así, lo entenderé, pero creo que es mejor hablarlo para evitar malentendidos.
+    Lo único que quiero es que te sientas cómoda y para mí, lo más importante es que seas tú misma conmigo, igual que yo lo soy contigo. “Solo imagina lo precioso que puede ser arriesgarse y que todo salga bien” Mario Benedetti'''
     st.markdown(f'<p style="color: black;">{me_gustas2}</p>', unsafe_allow_html=True)
-
-    me_gustas3 = '''Lo único que quiero es que te sientas cómoda. Para mí, lo más importante es que seas tú misma conmigo, igual que yo lo soy contigo. “Solo imagina lo precioso que puede ser arriesgarse y que todo salga bien” Mario Benedetti'''
-    st.markdown(f'<p style="color: black;">{me_gustas3}</p>', unsafe_allow_html=True)
 
     cancion = '''P.D.: Te dedico esta canción'''
     st.markdown(f'<p style="color: black;">{cancion}</p>', unsafe_allow_html=True)
