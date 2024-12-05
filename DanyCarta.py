@@ -17,7 +17,10 @@ header {
 </style>
 """
 st.markdown(hide_st_style, unsafe_allow_html=True)
-
+selected = option_menu(None, ["Portada","Carta"],
+          icons=["person-vcard", "folder-fill"],
+          menu_icon="cast", default_index=0, orientation="horizontal")
+if selected ="Portada":
 # Convertir imagen a base64
 def image_to_base64(img_path):
     with open(img_path, "rb") as f:
@@ -35,33 +38,7 @@ st.markdown(f"""
         </style>
     """, unsafe_allow_html=True)
 
-# Mostrar imagen como enlace y cambiar el estado
-if 'carta_visible' not in st.session_state:
-    st.session_state.carta_visible = False
-
-# Si no se ha mostrado la carta, renderizar la imagen
-if not st.session_state.carta_visible:
-    # Centrar el botón con una fila
-    st.markdown("""
-        <style>
-        .center-button {
-            display: flex;
-            justify-content: center;
-            margin-top: 20px;
-        }
-        </style>
-    """, unsafe_allow_html=True)
-
-    # Crear el contenedor de la fila
-    with st.container():
-        st.markdown('<div class="center-button">', unsafe_allow_html=True)
-        if st.button("Abrir la carta"):
-            st.session_state.carta_visible = True
-        st.markdown('</div>', unsafe_allow_html=True)
-
-# Mostrar la carta si está en el estado correspondiente
-if st.session_state.carta_visible:
-    # Fondo de la carta
+if selected ="Carta":
     background_image = image_to_base64('fondo1.jpg')
     st.markdown(f"""
         <style>
