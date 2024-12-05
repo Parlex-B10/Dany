@@ -21,22 +21,22 @@ selected = option_menu(None, ["Portada","Carta"],
           icons=["person-vcard", "folder-fill"],
           menu_icon="cast", default_index=0, orientation="horizontal")
 if selected =="Portada":
-# Convertir imagen a base64
-def image_to_base64(img_path):
-    with open(img_path, "rb") as f:
-        return base64.b64encode(f.read()).decode()
-
-# Imagen de portada
-cover_image = image_to_base64('portadapaloma.PNG')
-
-st.markdown(f"""
-        <style>
-        .stApp {{
-            background-image: url('data:image/jpeg;base64,{cover_image}');
-            background-size: 100% 100%;
-        }}
-        </style>
-    """, unsafe_allow_html=True)
+  # Convertir imagen a base64
+  def image_to_base64(img_path):
+      with open(img_path, "rb") as f:
+          return base64.b64encode(f.read()).decode()
+  
+  # Imagen de portada
+  cover_image = image_to_base64('portadapaloma.PNG')
+  
+  st.markdown(f"""
+          <style>
+          .stApp {{
+              background-image: url('data:image/jpeg;base64,{cover_image}');
+              background-size: 100% 100%;
+          }}
+          </style>
+      """, unsafe_allow_html=True)
 
 if selected =="Carta":
     background_image = image_to_base64('fondo1.jpg')
