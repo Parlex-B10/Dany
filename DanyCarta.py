@@ -79,7 +79,7 @@ if selected =="Carta":
     st.markdown(f'<p style="color: black;">{me_gustas1}</p>', unsafe_allow_html=True)
 
     me_gustas2 = '''Sin embargo, quiero ser claro contigo. Mi intención no es apresurar nada, quiero conocerte mejor y que tú también me conozcas. Pero quiero que sepas que me gustaría algo más que una amistad contigo, si eso es algo que tú también quisieras. Si no es así, lo entenderé, pero creo que es mejor hablarlo para evitar malentendidos.
-    Lo único que quiero es que te sientas cómoda y para mí, lo más importante es que seas tú misma conmigo, igual que yo lo soy contigo. "Solo imagina lo precioso que puede ser arriesgarse y que todo salga bien.' — Mario Benedetti."'''
+    Lo único que quiero es que te sientas cómoda y para mí, lo más importante es que seas tú misma conmigo, igual que yo lo soy contigo. "Solo imagina lo precioso que puede ser arriesgarse y que todo salga bien. — Mario Benedetti."'''
     st.markdown(f'<p style="color: black;">{me_gustas2}</p>', unsafe_allow_html=True)
 
     cancion = '''P.D.: Te dedico esta canción'''
