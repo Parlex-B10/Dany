@@ -20,7 +20,7 @@ header {
 st.markdown(hide_st_style, unsafe_allow_html=True)
 
 selected = option_menu(None, ["Portada","Carta"],
-          icons=["person-vcard", "folder-fill"],
+          icons=["envelope-open-heart-fill", "bookmark-heart-fill"],
           menu_icon="cast", default_index=0, orientation="horizontal")
 
 
