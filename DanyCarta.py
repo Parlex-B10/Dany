@@ -65,7 +65,7 @@ if selected =="Carta":
     introduccion = '''Quise empezar con esa frase porque siento que expresa de la mejor manera todo lo que te quiero decir. Desde que te conocí, no hago más que pensar en ti. Por ejemplo, mientras veo alguna película o serie, no puedo evitar imaginar tus reacciones o pensar qué estarás haciendo. Cada vez que estoy contigo, siento una tranquilidad y felicidad difícil de explicar.'''
     st.markdown(f'<p style="color: black;">{introduccion}</p>', unsafe_allow_html=True)
   
-    intro2 = '''Puede que sea muy temprano para decirte lo que siento, pero si no lo hago, puede que después sea demasiado tarde. No sé si existe como tal un momento perfecto para esto, pero sí sé que quiero crear momentos contigo y al final todo lo que vas a leer es porque son emociones que me generaste. La verdad dude un poco en escribirlo tal cual lo sentía porque considero que podría estar algo intenso, pero la finalidad es que me conozcas tal cual soy y al final expresarte lo que siento y decirte que los detalles que tengo contigo es porque eres tú, quiero estar ahí para ti, ya sea en tus momentos felices, de tristeza, de estrés, etc, para apoyarte y recordarte que eres capaz de lograr todo lo que te propongas'''
+    intro2 = '''Puede que sea muy temprano para decirte lo que siento, pero si no lo hago, puede que después sea demasiado tarde. No sé si existe como tal un momento perfecto para esto, pero sí sé que quiero crear momentos contigo y al final todo lo que vas a leer es porque son emociones que me generaste. La verdad dude un poco en escribirlo tal cual lo sentía porque considero que podría estar algo intenso, pero la finalidad es que me conozcas tal cual soy y al final expresarte lo que siento y decirte que los detalles que tengo contigo es porque eres tú, quiero estar ahí para ti, ya sea en tus momentos felices, de tristeza, de estrés, etc, para apoyarte y recordarte que eres capaz de lograr todo lo que te propongas.'''
     st.markdown(f'<p style="color: black;">{intro2}</p>', unsafe_allow_html=True)
   
     cuando_te_vi1 = '''Aún recuerdo la primera vez que te vi. No sé si crees en las conexiones especiales, pero desde que te conocí, siento que la vida quiso sorprenderme contigo. En esa fiesta estuve a punto de no ir porque mis amigos me cancelaron a última hora, pero al final me animé, y fue la mejor decisión, porque gracias a ello pude conocerte.'''
@@ -94,7 +94,7 @@ if selected =="Carta":
     """
     st.components.v1.html(spotify_embed_code, height=352)
 
-    respuesta = '''P.D.2: Me hubiera encantado ver tu reacción en persona, pero espero tu selfie. Y si tienes algo que decirme, estaré feliz de escucharte o leerte'''
+    respuesta = '''P.D.2: Espero que te haya gustado y me hubiera encantado ver tu reacción en persona, pero espero tu selfie. Y si tienes algo que decirme, estaré feliz de escucharte o leerte'''
     st.markdown(f'<p style="color: black;">{respuesta}</p>', unsafe_allow_html=True)
   
     firma = '''Con cariño,'''
