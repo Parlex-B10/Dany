@@ -100,5 +100,5 @@ if selected =="Carta":
     firma = '''Con cariño,'''
     st.markdown(f'<p style="color: black; font-size: 24px;">{firma}</p>', unsafe_allow_html=True)
 
-    autor = '''Tu Anakin Skywalker''' 
+    autor = '''Anakin Skywalker''' 
     st.markdown(f'<p style="color: black; font-size: 20px;">{autor}</p>', unsafe_allow_html=True)
