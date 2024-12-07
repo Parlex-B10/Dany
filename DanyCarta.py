@@ -78,9 +78,10 @@ if selected =="Carta":
     st.markdown(f'<p style="color: black;">{cuando_te_vi3}</p>', unsafe_allow_html=True)
 
     me_gustas1 = '''Pero si te lo preguntas, no solo me gustas por tu hermosa sonrisa, sino también por tu forma de ser, me gusta que seas muy agradecida, me gusta como te pones tus objetivos y buscas cumplirlos, me gusta que eres fiel a tus valores y creencias, me gusta que siempre tratas de dar lo mejor de ti a pesar de tener tu agenda bien llena, me gusta como te pones nerviosa cuando te digo algo cursi, me encanta ver tus ojos, me gusta que te diviertes a tu manera, me gusta el valor que le das a tus amistades y la importancia de fechas especiales, me encantó que estuviste en mi cumple y más tu promesa del mensaje a las 12, ME GUSTAS TÚ y siento que entre más te conozco, más me enamoro.
-    Sé que no te gustan mucho las promesas porque, cuando no se cumplen, pueden dejarte con expectativas rotas. Pero, más allá de una promesa, quiero demostrártelo día a día que tú eres la persona que me gusta y con quien quiero estar.'''
+    Sé que no te gustan mucho las promesas porque, cuando no se cumplen, pueden dejarte con expectativas rotas. Pero, más allá de una promesa, quiero demostrártelo día a día que tú eres la persona que me gusta y con quien quiero estar.
+    Quiero conocer lo que te gusta, lo que te disgusta, lo que te genera dudas, miedos, y todo lo que despierta tu interés. Cuando me mencionas un libro o algo que te gusta, intento conocer más sobre eso porque me interesa descubrir tu mundo. No lo hago para encajar o fingir ser alguien más, sino porque deseo ver el mundo a través de tus ojos.'''
     st.markdown(f'<p style="color: black;">{me_gustas1}</p>', unsafe_allow_html=True)
-
+    
     me_gustas2 = '''Sin embargo, quiero ser claro contigo. Mi intención no es apresurar nada, quiero conocerte mejor y que tú también me conozcas. Pero quiero que sepas que me gustaría algo más que una amistad contigo, si eso es algo que tú también quisieras. Si no es así, lo entenderé, pero creo que es mejor hablarlo para evitar malentendidos.
     Lo único que quiero es que te sientas cómoda y para mí, lo más importante es que seas tú misma conmigo, igual que yo lo soy contigo. "Solo imagina lo precioso que puede ser arriesgarse y que todo salga bien. — Mario Benedetti."'''
     st.markdown(f'<p style="color: black;">{me_gustas2}</p>', unsafe_allow_html=True)
